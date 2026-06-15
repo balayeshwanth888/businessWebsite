@@ -1,0 +1,88 @@
+.contact-section {
+  background: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  background: #eef7e6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.contact-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e4010;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: #4a6a35;
+  line-height: 1.6;
+}
+
+.map-box {
+  background: linear-gradient(145deg, #eef7e6, #d8eec4);
+  border-radius: 16px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c8e0b0;
+  gap: 8px;
+}
+
+.map-icon {
+  font-size: 48px;
+}
+
+.map-name {
+  font-size: 14px;
+  color: #4a6a35;
+  font-weight: 500;
+}
+
+.map-sub {
+  font-size: 12px;
+  color: #6a9a50;
+}
+
+.map-btn {
+  margin-top: 16px;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 640px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
