@@ -9,6 +9,12 @@ const products = [
   { emoji: "🌽", name: "Corn", price: "From ₹15 / piece", badge: "Seasonal" },
   { emoji: "🥬", name: "Leafy Greens", price: "From ₹10 / bunch", badge: "Bestseller" },
   { emoji: "🫑", name: "Capsicum", price: "From ₹40 / kg", badge: "In Stock" },
+  { emoji: "🍆", name: "Brinjal (Eggplant)", price: "From ₹22 / kg", badge: "In Stock" },
+  { emoji: "🥒", name: "Cucumber", price: "From ₹16 / kg", badge: "Fresh" },
+  { emoji: "🧄", name: "Garlic", price: "From ₹120 / kg", badge: "Premium" },
+  { emoji: "🌶️", name: "Green Chilli", price: "From ₹35 / kg", badge: "Spicy" },
+  // { emoji: "🥔", name: "Sweet Potato", price: "From ₹28 / kg", badge: "Seasonal" },
+  // { emoji: "🥗", name: "Cabbage", price: "From ₹14 / kg", badge: "In Stock" },
 ];
 
 export default function Products() {

@@ -6,6 +6,17 @@ export default function Hero() {
 
   return (
     <section className="hero">
+      <div className="floating-veggies">
+        <span className="veggie veggie-1">🥦</span>
+        <span className="veggie veggie-2">🍅</span>
+        <span className="veggie veggie-3">🥕</span>
+        <span className="veggie veggie-4">🌽</span>
+        <span className="veggie veggie-5">🥬</span>
+        <span className="veggie veggie-6">🫑</span>
+        <span className="veggie veggie-7">🧅</span>
+        <span className="veggie veggie-8">🥒</span>
+      </div>
+
       <div className="hero-content">
         <p className="hero-eyebrow">Vijayawada's trusted wholesale supplier</p>
 
