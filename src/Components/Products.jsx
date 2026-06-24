@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Products.css";
-
 const products = [
   { emoji: "🍅", name: "Tomatoes", price: "From ₹20 / kg", badge: "Bestseller" },
   { emoji: "🥔", name: "Potatoes", price: "From ₹18 / kg", badge: "In Stock" },
@@ -16,13 +15,13 @@ export default function Products() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <section id="products" className="section products-section">
-      <p className="section-label">What we supply</p>
-      <h2 className="section-title">Our product catalogue</h2>
+    <section className="section products-section">
+      <div className="section-label">Our Products</div>
+      <h1 className="section-title">Fresh Vegetables</h1>
       <p className="section-desc">
-        All vegetables are sourced fresh every morning from local farms and wholesale markets.
-        Bulk orders welcome.
+        All types of fresh vegetables available at wholesale prices.
       </p>
+
       <div className="product-grid">
         {products.map((p, i) => (
           <div
@@ -31,8 +30,8 @@ export default function Products() {
             onMouseEnter={() => setHoveredCard(i)}
             onMouseLeave={() => setHoveredCard(null)}
           >
-            <span className="product-emoji">{p.emoji}</span>
             <span className="product-badge">{p.badge}</span>
+            <span className="product-emoji">{p.emoji}</span>
             <div className="product-name">{p.name}</div>
             <div className="product-price">{p.price}</div>
           </div>

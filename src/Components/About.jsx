@@ -1,34 +1,46 @@
 import "./About.css";
 
-const features = [
-  { icon: "🌱", title: "Farm-direct sourcing", desc: "We work directly with farmers in Telangana and Andhra Pradesh to bring you the freshest produce at the best rates." },
-  { icon: "⚡", title: "Same-day delivery", desc: "Orders placed before 6 AM are delivered the same morning — so your kitchen never runs short." },
-  { icon: "🤝", title: "Trusted by businesses", desc: "Hotels, restaurants, canteens, and kirana stores across Vijayawada rely on us daily for their vegetable needs." },
-  { icon: "💰", title: "Wholesale pricing", desc: "Competitive bulk rates with flexible payment terms. Special monthly contracts available for large buyers." },
+const stats = [
+  { number: "15+", label: "Years Experience" },
+  { number: "500+", label: "Happy Clients" },
+  { number: "50+", label: "Vegetable Varieties" },
+  { number: "24/7", label: "Order Support" },
+];
+
+const values = [
+  { icon: "🌱", title: "Farm Fresh", desc: "Sourced daily from local farms and trusted wholesale markets." },
+  { icon: "🚚", title: "Reliable Delivery", desc: "On-time bulk delivery, every single order, no exceptions." },
+  { icon: "✅", title: "Quality Checked", desc: "Every batch inspected for freshness before it leaves our warehouse." },
+  { icon: "💰", title: "Wholesale Pricing", desc: "Fair, transparent pricing built for bulk buyers and resellers." },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="section about-section">
-      <p className="section-label">Our story</p>
-      <h2 className="section-title">About Sri Lakshmi Vegetables</h2>
+    <section className="section about-section">
+      <div className="section-label">About Us</div>
+      <h1 className="section-title">Who We Are</h1>
       <p className="section-desc">
-        A family-run wholesale vegetable business serving Vijayawada with freshness, reliability,
-        and the best prices for over two decades.
+        We supply fresh vegetables in bulk with a focus on quality, freshness,
+        and reliable service for all our customers.
       </p>
-      <div className="about-grid">
-        <div className="about-features">
-          {features.map((f) => (
-            <div key={f.title} className="feature-item">
-              <div className="feature-icon">{f.icon}</div>
-              <div>
-                <h4 className="feature-title">{f.title}</h4>
-                <p className="feature-desc">{f.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="about-visual">🥗</div>
+
+      <div className="about-stats">
+        {stats.map((s) => (
+          <div key={s.label} className="stat-item">
+            <div className="stat-number">{s.number}</div>
+            <div className="stat-label">{s.label}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="about-values">
+        {values.map((v) => (
+          <div key={v.title} className="value-card">
+            <span className="value-icon">{v.icon}</span>
+            <h3 className="value-title">{v.title}</h3>
+            <p className="value-desc">{v.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
