@@ -1,10 +1,10 @@
 import "./About.css";
 
 const stats = [
-  { number: "15+", label: "Years Experience" },
-  { number: "500+", label: "Happy Clients" },
-  { number: "50+", label: "Vegetable Varieties" },
-  { number: "24/7", label: "Order Support" },
+  { number: "30+", label: "Years Experience" },
+  { number: "5000", label: "Happy Clients" },
+  { number: "20", label: "Vegetable Varieties" },
+  // { number: "24/7", label: "Order Support" },
 ];
 
 const values = [

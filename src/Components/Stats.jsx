@@ -1,9 +1,9 @@
 import "./StatsBar.css";
 
 const stats = [
-  { num: "500+", label: "Happy Clients" },
-  { num: "20+", label: "Years of Service" },
-  { num: "50+", label: "Varieties" },
+  { num: "5000", label: "Happy Clients" },
+  { num: "35", label: "Years of Service" },
+  { num: "20", label: "Varieties" },
   { num: "Daily", label: "Fresh Arrivals" },
 ];
 
